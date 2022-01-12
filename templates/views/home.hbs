@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{{>headerLinks}}
+</head>
+
+<body>
+	{{>navbar}}
+
+	{{!-- -------------Hero's section start-------------- --}}
+	<div class="container-fluid pt-5" id="homeId">
+		<div class="row">
+			<div class="col-md-10 col-12 mx-auto">
+
+				<div class="row">
+					{{!-- left side --}}
+					<div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex flex-column justify-content-center align-items-start">
+						<div class="mx-auto text-center">
+							<h1>WE WILL HELP YOU TO</h1>
+							<h1>GROW YOUR BUSINESS</h1>
+							<P class="para">We Are The Team Of <span class="bold-style"> Professional Developer</span></P>
+							<button class="btn-style btn ">Read more</button>
+						</div>
+					</div>
+
+					{{!-- right side --}}
+					<div class="col-md-6 col-12 hero-img order-md-1 order-0">
+						<figure>
+							<img src="images/growth.svg" alt="">
+						</figure>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	{{!-- Hero end --}}
+
+	{{!-- -------------About section start------------- --}}
+	{{>about}}
+	{{!-- About end --}}
+
+	{{!-- -------------About section start------------- --}}
+	{{>service}}
+	{{!-- About end --}}
+
+	{{!-- -------------Map section start------------- --}}
+	{{>maps}}
+	{{!-- Map end --}}
+
+	{{!-- -------------Contact section start------------- --}}
+	{{>contact}}
+	{{!-- Contact end --}}
+
+	{{>footer}}
+
+	{{>JSJQLinkes}}
+</body>
+
+</html>

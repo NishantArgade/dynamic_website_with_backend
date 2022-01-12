@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&family=Poiret+One&family=Quicksand:wght@500&display=swap');
+*{
+	/* margin: 0;
+	padding: 0;
+	box-sizing: border-box; */
+	font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+html{
+	font-size: 85.6%;
+	scroll-behavior: smooth;
+}
+
+#homeId,#aboutId,#galleryId,#contactId,#serviceId{
+	height: 100vh!important;
+}
+/* for always stick navbar at bottom */
+body{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+/* set global color variables */
+:root{
+	--text1 : #fa5687;
+	--text2:#7e7e7e;
+	--btnColor:rgb(228, 79, 74);
+}
+
+/* -------- Nav bar ----------- */
+.navbar-style{
+	background-color: ghostwhite;
+	box-shadow: 2px 4px 13px 1px rgba(8, 8, 8,0.1);
+}
+#logo{
+	font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: var(--text1);
+  text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+}
+.nav-link:hover{
+	color: #5bf1d8!important;
+ font-weight: 800;
+ font-size: 1.2rem;
+}
+/* --------- Our hero section -------------- */
+
+.hero-text h1{
+	font-size: 2.5rem;
+	/* line-height: 1.5rem; */
+	text-shadow: 5px 4px 11px rgba(0, 0, 0, 0.026);
+	color: #2f2f2f;
+	letter-spacing: 2px;
+    text-transform: uppercase;	
+}
+.hero-text h1:nth-child(1){
+	color: var(--text2);
+	text-shadow: 2px 3px 3px rgb(131, 131, 131);
+	font-weight: 500;
+	line-height: 3rem;
+}
+.hero-text h1:nth-child(2){
+	color: #0206db;
+	text-shadow: 2px 5px 4px rgb(201, 201, 201);
+	font-weight: 900;
+	line-height: 3rem;
+}
+.btn-style{
+	background-color:var(--btnColor)!important;
+	color: white!important;
+	border-radius: 10px!important;
+	padding: 0.2rem 0.5rem;
+	box-shadow: 2px 3px 8px 2px rgb(196, 196, 196)!important ;
+	border: gray!important;
+	font-weight: 900!important;
+	letter-spacing: 0.7px!important;
+}
+.btn-style:hover{
+	background-color: rgb(241, 241, 241)!important;
+	color: var(--text1)!important;
+}
+.para{
+	margin-top: 1.5rem;
+}
+/* ----- About us ------------- */
+.about-head{
+  color: var(--text1);
+  font-weight: 900;
+}
+.about-sub-head{
+	color: var(--text2);
+}
+
+/* --------- Our Service ---------- */
+#serviceId{
+	height: 100vh;
+}
+.box{
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem 1.3rem;
+   padding-top: 3rem;
+   border-radius: 10px;
+   box-shadow: 2px 2px 12px 4px rgb(175, 171, 171);
+   cursor: pointer;
+}
+.box-icon{
+	background-image: linear-gradient(to left top, #123972, #006a9b, #009aa2, #4cc591, #c9e782);
+	width: 5rem;
+	height: 4rem;
+	position: relative;
+	top:2.3rem;
+	border-radius: 49% 51% 51% 49% / 31% 30% 70% 69% ;
+	cursor: pointer;
+}
+
+#box1:hover{
+	background-image: linear-gradient(to right bottom, #051937, #004c6e, #00848b, #47bb89, #c9ea7f);
+	color: white;
+}
+
+#box2:hover{
+	background-image: linear-gradient(to right bottom, #ab1dae, #f02c78, #ff754c, #ecb547, #c9ea7f);	color: white;
+}
+#box3:hover{
+	background-image: linear-gradient(to right bottom, #e70a13, #e56800, #dc9b00, #d2c542, #c9ea7f);	color: white;
+}
+#box4:hover{
+	background-image: linear-gradient(to right bottom, #26b8c4, #37c8ba, #62d7a8, #94e293, #c9ea7f);	color: white;
+}
+#box5:hover{
+	background-image: linear-gradient(to right bottom, #219a2e, #58ae3f, #80c253, #a5d668, #c9ea7f);	color: white;
+}
+#box6:hover{
+	background-image: linear-gradient(to right bottom, #d7e319, #c1d433, #adc542, #9cb54c, #8ca554);	color: white;
+}
+/* ----- map -------- */
+.map{
+	margin-top: 6rem;
+}
+/* ----------- footer ------------ */
+footer{
+	background-color: rgb(238, 236, 236);
+	padding:40px 0;
+}
+.footer-basic {
+	background-color:#ffffff;
+	color:#4b4c4d;
+	/* for always stick navbar at bottom */
+	margin-top: auto;
+  }
+  
+  .footer-basic ul {
+	padding:0;
+	list-style:none;
+	text-align:center;
+	font-size:18px;
+	line-height:1.6;
+	margin-bottom:0;
+  }
+  
+  .footer-basic li {
+	padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+	color:inherit;
+	text-decoration:none;
+	opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+	opacity:1;
+  }
+  
+  .footer-basic .social {
+	text-align:center;
+	padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+	font-size:24px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	border:1px solid #ccc;
+	margin:0 8px;
+	color:inherit;
+	opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+	opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:#aaa;
+	margin-bottom:0;
+  }
+  
+  /* ********* 404 page **************************** */
+.errorPage{
+	width: 25rem;
+	height: auto;
+	/* for center img -> margin:auto*/
+	margin: auto;
+}
+.goBackBtn{
+	background-color: orange!important;
+	color: #fff!important;
+	font-weight: 900!important;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 15px!important;
+	box-shadow: 0 3px 2px 2px gray;
+}
+.goBackBtn:hover{
+	background-color: rgb(216, 93, 62)!important;
+	color: #fff;
+}
+  /* -------- Responsiveness ---------- */
+
+  @media (max-width:768px) {
+	
+
+	.hero-text{
+		padding: 0 5px;
+	}
+	.hero-text h1{
+		margin: auto;
+	}
+	#logo{
+		font-size: 1.3rem;
+	}
+	.hero-text h1{
+		font-size: 1.7rem;
+	}
+	figure{
+		margin: 5rem 0;
+	}
+	figure img{
+		min-width: 100%;
+	}
+	.btn-style{
+		margin: auto;
+	}
+	#serviceId{
+		height: auto!important;
+		margin: 0rem 0;
+	}
+	#aboutId{
+		height: auto;
+		margin-top: 8rem!important;
+		margin-bottom: 9rem!important;
+	}
+  }
